@@ -1,54 +1,121 @@
 /*
-1. Desenvolva um algoritmo que leia a altura de 15 pessoas. Este
-programa deverá calcular e mostrar:
-a. A menor altura do grupo;
-b. A maior altura do grupo;
+-------- 1 ----------
+
+for (let i; i <= 15; i++) {
+    let altura = Number(prompt("Digite sua altura"))
+
+}
 */
+
+
+/*
+-------- 2 ----------
+
+let pedro = 150
+let lucas = 110
+
+for (let i = 0; lucas <= pedro; i++) {
+    lucas += 3
+    pedro += 2
+
+    if (lucas === pedro) {
+        console.log("Lucas e Pedro tem a mesma altura em " + i + " anos")
+    }
+}
+lucas = 110
+pedro = 150
+i = 0
+for (let i = 0; lucas <= pedro; i++) {
+    lucas += 3
+    pedro += 2
+
+    if (lucas > pedro) {
+        console.log("Lucas é maior que Pedro em " + i + " anos")
+    }
+
+}
+*/
+
+
 /*
 
-2. Pedro tem 1,50m de altura e cresce 2 centímetros por ano, enquanto
-Lucas tem 1,10m de altura e cresce 3 centímetros por ano.
-Construa um algoritmo que calcule e imprima quantos anos serão
-necessários para que:
-a. Lucas e Pedro tenham o mesmo tamanho;
-b. Lucas seja maior que Pedro.
+-------- 3 ----------
+
+let numero = Number(prompt("Digite um numero"))
+for (let i = 0; i <= 10; i++) {
+    console.log(i + " x " + numero + " = " + i * numero)
+}
 */
+
 /*
 
-3. Escreva um algoritmo que faça a tabuada de um número e
-apresente o resultado de acordo com o modelo a seguir, sabendo
-que o multiplicando deverá ser fornecido pelo usuário (n) e a
-quantidade de iterações também (i).
-1 * 2 = 2
-2 * 2 = 4
-3 * 2 = 6
-...
+-------- 4 ----------
+
+for (let i = 0; i <= 250; i++) {
+    if (i % 3 === 0) {
+        console.log("Esse numero é multiplo de 3: " + i)
+    }
+    if (i % 5 === 0) {
+        console.log("Esse numero é multiplo de 5: " + i)
+    }
+}
 */
+
 /*
 
-4. Escreva um algoritmo que percorra os números inteiros entre 1 e 250
-e verifique quais números são múltiplos de 3 e quais são múltiplos
-de 5.
+-------- 5 ----------
+
+let valor = Number(prompt("Digite um valor"))
+for (let i = 0; i <= valor; i++) {
+    console.log(i)
+}
 */
+
 /*
 
-5. Faça um programa usando a estrutura “for” que leia um número
-inteiro positivo e mostre na tela uma contagem de 0 até o valor
-digitado:
-Ex: Digite um valor: 9
-Contagem: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, FIM!
-*/
-/*
+-------- 6 ----------
 
-6. Desenvolva um algoritmo que mostre uma contagem regressiva de
-30 até 1, marcando os números que forem primos, exatamente
-como mostrado abaixo:
-30 [29] 28 27 26 25 24 [23] 22 21 20 [19] 18 [17] 16...
+for (let i = 30; i >= 1; i--) {
+    let divisores = 0;
+    for (let x = 1; x <= i; x++) {
+        if (i % x === 0) {
+            divisores++;
+        }
+    }
+    if (divisores === 2) {
+        console.log("[" + i + "]");
+    } else {
+        console.log(i);
+    }
+}
 */
-/*
 
-7. Desenvolva um algoritmo que leia 10 números, calcule e escreva a
-média aritmética dos valores lidos, a quantidade de valores
-positivos, a quantidade de valores negativos e o percentual de
-valores negativos e positivos.
+/*
+-------- 7 ----------
+
+
+let soma = 0;
+let Positivos = 0;
+let Negativos = 0;
+
+for (let i = 0; i < 10; i++) {
+    let numero = Number(prompt(`Digite o ${i + 1}º número:`));
+    soma += numero;
+
+    if (numero > 0) {
+        Positivos++;
+    } else if (numero < 0) {
+        Negativos++;
+    }
+}
+
+let media = soma / 10;
+let percentualPositivos = (Positivos / 10) * 100;
+let percentualNegativos = (Negativos / 10) * 100;
+
+console.log("Média aritmética: " + media);
+console.log("Quantidade de valores positivos: " + Positivos);
+console.log("Quantidade de valores negativos: " + Negativos);
+console.log("Percentual de valores positivos: " + percentualPositivos + "%");
+console.log("Percentual de valores negativos: " + percentualNegativos + "%");
 */
